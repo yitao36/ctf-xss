@@ -8,5 +8,5 @@ Deno.serve((req: Request) => {
   // Get specific parameters
   const flag = params.get("flag");
   console.log(flag)
-  return Response.redirect("/debug/healthcheck", 301);
+  return Response.redirect("/attnd-svc.attendance-net", 302);
 });
