@@ -8,6 +8,5 @@ Deno.serve((req: Request) => {
   // Get specific parameters
   const flag = params.get("flag");
   console.log(flag)
-
-  return new Response("You got hacked!")
+  return Response.redirect("localhost.com/debug/healthcheck", 200);
 });
