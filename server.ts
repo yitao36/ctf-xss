@@ -6,7 +6,7 @@ Deno.serve((req: Request) => {
   const params = url.searchParams;
 
   // Get specific parameters
-  const flag = params.get("flag");
-  console.log(flag)
-  return Response.redirect("http://debug/", 302);
+  const url2 = params.get("url");
+  console.log(url)
+  return Response.redirect("http://" + url2, 302);
 });
