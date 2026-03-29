@@ -8,5 +8,5 @@ Deno.serve((req: Request) => {
   // Get specific parameters
   const flag = params.get("flag");
   console.log(flag)
-  return Response.redirect("http://attnd-svc.attendance-net", 302);
+  return Response.redirect("http://debug", 302);
 });
