@@ -8,5 +8,5 @@ Deno.serve((req: Request) => {
   // Get specific parameters
   const flag = params.get("flag");
   console.log(flag)
-  return Response.redirect("localhost", 200);
+  return Response.redirect("https://localhost/debug/healthcheck", 302);
 });
